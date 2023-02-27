@@ -1,0 +1,5 @@
+<swiper-container #swiperEl appSwiper [config]="config" init="false">
+  <swiper-slide *ngFor="let slide of slides$ | async">
+    <span>time: {{ slide.time }}</span>
+  </swiper-slide>
+</swiper-container>
